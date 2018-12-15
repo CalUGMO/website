@@ -1,0 +1,117 @@
+/*
+ * ENTIRE SITE
+ */
+body {
+  font-family: Roboto, sans-serif;
+  margin: 0px;
+
+}
+
+/*
+ * SITE HEADER
+ */
+.site-header {
+  background-color: blue;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 20rem;
+  min-width: 200px;
+  max-width: 500px;
+  height: 100%;
+}
+
+.site-header .wrapper li {
+  text-align: center;
+  width: 100%;
+  list-style-type: none;
+  vertical-align: middle;
+  display: block;
+  border-top: white 1px solid;
+  font-size: 1.3rem;
+}
+
+.site-header .wrapper li:first-child {
+  border-top: none;
+
+}
+
+.site-header .wrapper li:hover {
+  background-color: yellow;
+  color: blue;
+}
+
+.site-header .wrapper li a {
+  text-decoration: none;
+  color: white;
+  padding: 30px 0;
+  display: block;
+}
+
+.site-header .wrapper li:hover a {
+  color: blue;
+}
+
+/*
+ * WRAPPER
+ */
+.page-content > .wrapper {
+  padding-left: 20rem;
+}
+
+/*
+ * NEWS
+ */
+#news:before {
+  background-image: url('./images/silly_monkeys_1.jpg');
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: '';
+  display: block;
+  height: 15rem;
+  width: 100%;
+}
+#news > .container {
+  width: 40rem;
+  margin: auto;
+}
+#news #header {
+
+  background-color: red;
+}
+.post_header .post_title {
+}
+.post_header .post_date {
+  text-align: left;
+}
+.post_header .post_source {
+  float: right;
+}
+
+/*
+ * THUGMO
+ */
+#thugmo:before {
+  background-image: url('./images/team_photo_1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: '';
+  display: block;
+  height: 15rem;
+  width: 100%;
+}
+#thugmo > .container {
+  width: 40rem;
+  margin: auto;
+}
+
+#thugmo #header{
+  background-color: green;
+  padding: 1rem;
+}
+#thugmo #header h2 {
+  width: 40rem;
+  margin: auto;
+}
