@@ -32,19 +32,40 @@ body {
   height: 100%;
 }
 
+.site-header .logo {
+  width: 20rem;
+  height: 20rem;
+  margin: auto;
+  display: block;
+  background: url("/assets/images/website_gold-navy.png") center no-repeat;
+  background-size: 18rem;
+}
+
+.site-header .logo:hover {
+  background-image: url("/assets/images/website_navy-gold.png");
+}
+
+.site-header .description {
+  color: var(--white);
+  text-align: center;
+}
+
+.site-header .wrapper ul {
+  padding: 0px;
+}
+
 .site-header .wrapper li {
   text-align: center;
   width: 100%;
   list-style-type: none;
   vertical-align: middle;
   display: block;
-  border-top: white 1px solid;
+  border-top: #274975 1px solid;
   font-size: 1.3rem;
 }
 
 .site-header .wrapper li:first-child {
   border-top: none;
-
 }
 
 .site-header .wrapper li:hover {
@@ -213,4 +234,10 @@ body {
   color: var(--ugmo-blue);
   width: 40rem;
   margin: auto;
+}
+#roster .grid-item {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 15px;
 }

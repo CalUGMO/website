@@ -7,6 +7,16 @@ title: Roster
     <h2>Roster</h2>
   </section>
   <div class="container">
+    <div class="grid">
+      {% for player in site.roster2019 %}
+        <div class="grid-item">
+          <h2>{{ player.name }}</h2>
+          <p>{{ player.major }}</p>
+          <p>{{ player.hometown }}</p>
+        </div>
+      {% endfor %}
+
+    </div>
   </div>
 
 </div>

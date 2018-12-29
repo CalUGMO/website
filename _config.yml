@@ -21,9 +21,12 @@ baseurl: "" # the subpath of your site, e.g. /blog
 # TODO:set the url
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
+collections_dir: collections
 collections:
   pages:
     output: true
+  roster2019:
+    output: false
 
 # Build settings
 markdown: kramdown
