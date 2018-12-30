@@ -16,6 +16,8 @@ body {
   font-family: Roboto, sans-serif;
   margin: 0px;
   background-color: var(--light-gray);
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 /*
@@ -222,7 +224,7 @@ body {
   width: 100%;
 }
 #roster > .container {
-  width: 40rem;
+  width: 40%;
   margin: auto;
 }
 
@@ -234,6 +236,8 @@ body {
   color: var(--ugmo-blue);
   width: 40rem;
   margin: auto;
+}
+#roster .grid {
 }
 #roster .grid-item {
   width: 100px;
