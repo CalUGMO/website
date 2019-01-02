@@ -75,7 +75,7 @@ body {
   color: var(--ugmo-blue);
 }
 
-.site-header .wrapper li a {
+.site-header a {
   text-decoration: none;
   color: var(--white);
   padding: 30px 0;
@@ -84,6 +84,10 @@ body {
 
 .site-header .wrapper li:hover a {
   color: var(--ugmo-blue);
+}
+
+.site-header .wrapper .active {
+  color: var(--ugmo-gold);
 }
 
 /*
@@ -197,8 +201,9 @@ body {
   width: 100%;
 }
 #media > .container {
-  width: 40rem;
+  width: 90%;
   margin: auto;
+  padding-top: 10px;
 }
 
 #media #header{
@@ -210,8 +215,26 @@ body {
   width: 40rem;
   margin: auto;
 }
+#media .grid-item, .grid-sizer {
+  width: 106.6666px;
+  height: 106.6666px;
+  margin-bottom: 10px;
+  opacity: 0.7;
+}
+#media .grid-item:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+#media .grid-item-long {
+  width: 320px;
+  height: 214px;
+}
+#media .grid-item-tall {
+  width: 214px;
+  height: 320px;
+}
 /*
- * ROSTER 
+ * ROSTER
  */
 #roster:before {
   background-image: url('./images/tuna_max_1.jpg');
