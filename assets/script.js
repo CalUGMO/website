@@ -1,11 +1,21 @@
 $(document).ready(function(){
+  // Roster isotope grid
+  var $roster_grid = $('#roster .grid').imagesLoaded().progress(function() {
+    $roster_grid.isotope({
+      itemSelector: '#roster .grid-item',
+      masonry: {
+        columnWidth: 300,
+      }
+    });
+  });
+
   // Media isotope grid
+  var $media_container = $('#media .container');
   var $media_grid = $('#media .grid').imagesLoaded().progress(function() {
     $media_grid.isotope({
       itemSelector: '#media .grid-item',
       masonry: {
-        columnWidth: 106.66666,
-        gutter: 5
+        columnWidth: $media_container.width() / 6,
       }
     });
   });
