@@ -8,11 +8,12 @@ title: Roster
   </section>
   <div class="container">
     <div class="grid">
+      <!-- .grid-sizer empty element -->
+      <!-- <div class="grid-sizer"></div> -->
       {% for player in site.roster2019 %}
         <div class="grid-item">
-          <h2>{{ player.name }}</h2>
-          <p>{{ player.major }}</p>
-          <p>{{ player.hometown }}</p>
+          <img src="{{ player.img_url }}" class="picture" />
+          <p class="metadata">{{ player.name }} | <em>#{{ player.number }}</em></p>
         </div>
       {% endfor %}
 
