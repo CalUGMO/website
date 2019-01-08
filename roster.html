@@ -11,13 +11,20 @@ title: Roster
       <!-- .grid-sizer empty element -->
       <!-- <div class="grid-sizer"></div> -->
       {% for player in site.roster2019 %}
-        <div class="grid-item">
-          <img src="{{ player.img_url }}" class="picture" />
-          <p class="metadata">{{ player.name }} | <em>#{{ player.number }}</em></p>
-        </div>
+      <div class="grid-item" data-name="{{ player.short }}">
+        <img src="{{ player.img_url }}" class="picture" />
+        <p class="metadata">{{ player.name }} | <em>#{{ player.number }}</em></p>
+      </div>
       {% endfor %}
 
     </div>
+    {% for player in site.roster2019 %}
+    <div class="background" id="{{ player.short }}">
+      <div class="pop">
+        {{ player.content }}
+      </div>
+    </div>
+    {% endfor %}
   </div>
 
 </div>

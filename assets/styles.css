@@ -300,3 +300,36 @@ body {
 #roster .grid-item .metadata {
   text-align: center;
 }
+#roster .background {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 20rem;
+  right: 0;
+  bottom: 0;
+  background-color: var(--black-opaque);
+}
+#roster .background > .pop {
+  width: 50%;
+  z-index: 12;
+  text-align: center;
+  background-color: var(--light-gray-accent);
+  margin: auto;
+  margin-top: 10%;
+  padding: 3%;
+}
+#roster .background > .pop img {
+  width: 80%;
+}
+#roster .background > .pop .bio {
+  max-width: 80%;
+  text-align: justify;
+  margin: auto;
+}
+#roster .background > .pop .data {
+  max-width: 80%;
+  margin: 1em auto;
+}
