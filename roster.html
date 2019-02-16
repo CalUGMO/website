@@ -3,13 +3,11 @@ layout: default
 title: Roster
 ---
 <div id="roster">
-  <section id="header">
+  <section class="header">
     <h2>Roster</h2>
   </section>
   <div class="container">
     <div class="grid">
-      <!-- .grid-sizer empty element -->
-      <!-- <div class="grid-sizer"></div> -->
       {% for player in site.roster2019 %}
       <div class="grid-item" data-name="{{ player.short }}">
         <img src="{{ player.img_url }}" class="picture" />

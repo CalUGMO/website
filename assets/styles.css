@@ -115,14 +115,15 @@ body {
   width: 40rem;
   margin: auto;
 }
-#news #header {
+#news .header {
   background-color: var(--light-gray-accent);
   padding: 1rem;
 }
-#news #header h2 {
+#news .header h2 {
   color: var(--ugmo-blue);
   width: 40rem;
   margin: auto;
+  text-align: center;
 }
 #news .general .past {
   opacity: 0.5;
@@ -147,14 +148,15 @@ body {
   margin: auto;
 }
 
-#thugmo #header{
+#thugmo .header{
   background-color: var(--light-gray-accent);
   padding: 1rem;
 }
-#thugmo #header h2 {
+#thugmo .header h2 {
   color: var(--ugmo-blue);
   width: 40rem;
   margin: auto;
+  text-align: center;
 }
 
 /*
@@ -175,14 +177,15 @@ body {
   margin: auto;
 }
 
-#about #header{
+#about .header{
   background-color: var(--light-gray-accent);
   padding: 1rem;
 }
-#about #header h2 {
+#about .header h2 {
   color: var(--ugmo-blue);
   width: 40rem;
   margin: auto;
+  text-align: center;
 }
 /*
  * MEDIA
@@ -203,14 +206,15 @@ body {
   padding-top: 10px;
 }
 
-#media #header{
+#media .header{
   background-color: var(--light-gray-accent);
   padding: 1rem;
 }
-#media #header h2 {
+#media .header h2 {
   color: var(--ugmo-blue);
   width: 40rem;
   margin: auto;
+  text-align: center;
 }
 #media .grid-item, .grid-sizer {
   width: 10%;
@@ -262,14 +266,15 @@ body {
   margin: auto;
 }
 
-#roster #header{
+#roster .header{
   background-color: var(--light-gray-accent);
   padding: 1rem;
 }
-#roster #header h2 {
+#roster .header h2 {
   color: var(--ugmo-blue);
   width: 40rem;
   margin: auto;
+  text-align: center;
 }
 #roster .grid {
   display: flex;
