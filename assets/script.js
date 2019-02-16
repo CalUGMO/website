@@ -4,7 +4,9 @@ $(document).ready(function(){
   // Roster click handling
   $("#roster .grid-item").on("click", function() {
     $name = $(this).data("name");
+    console.log($name);
     $("#" + $name).css("display", "block");
+    $('slickdiv').slick("setStartPosition", 2);
   });
 
   $("#roster .background").click(function(e) {

@@ -124,20 +124,16 @@ body {
   width: 40rem;
   margin: auto;
 }
-.post_header .post_title {
+#news .general .past {
+  opacity: 0.5;
 }
-.post_header .post_date {
-  text-align: left;
-}
-.post_header .post_source {
-  float: right;
-}
+
 
 /*
  * THUGMO
  */
 #thugmo:before {
-  background-image: url('./images/team_photo_1.jpg');
+  background-image: url('./images/thugmo2.jpeg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -314,11 +310,12 @@ body {
 }
 #roster .background > .pop {
   width: 50%;
+  max-width: 600px;
   z-index: 12;
   text-align: center;
   background-color: var(--light-gray-accent);
   margin: auto;
-  margin-top: 10%;
+  margin-top: 5%;
   padding: 3%;
 }
 #roster .background > .pop img {
