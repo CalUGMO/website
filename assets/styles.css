@@ -1,3 +1,5 @@
+---
+---
 /*
  * VARIABLES
  */
@@ -42,12 +44,12 @@ body {
   max-height: 20rem;
   margin: auto;
   display: block;
-  background: url("/assets/images/website_gold-navy.png") center no-repeat;
+  background: url("{{site.baseurl}}/assets/images/website_gold-navy.png") center no-repeat;
   background-size: 25vh;
 }
 
 .site-header .logo:hover {
-  background-image: url("/assets/images/website_navy-gold.png");
+  background-image: url("{{site.baseurl}}/assets/images/website_navy-gold.png");
 }
 
 .site-header .description {

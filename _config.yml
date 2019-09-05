@@ -17,7 +17,7 @@ title: Cal UGMO Website
 email: calultimate@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   The official website for UC Berkeley's Men's Ultimate Frisbee team, Cal UGMO.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/one" # the subpath of your site, e.g. /blog
 # TODO:set the url
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
