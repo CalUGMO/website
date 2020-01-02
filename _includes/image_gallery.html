@@ -6,7 +6,6 @@
   .image-gallery a {
     float: left;
     display: block;
-    margin: 0 0 1% 1%;
     width: 19%;
     text-align: center;
     text-decoration: none!important;
@@ -24,7 +23,7 @@
   }
 </style>
 
-<p class="image-gallery">
+<p class="image-gallery" id="media_img_gallery">
   {% for file in site.static_files %}
     {% if file.path contains include.folder %}
       {% if file.extname == '.jpg' or file.extname == '.jpeg' or file.extname == '.JPG' or file.extname == '.JPEG' %}
@@ -32,7 +31,7 @@
         {% assign filename = filenameparts | last %}
         <a href="{{ file.path }}" title="{{ filename }}">
           <!-- <img src="//images.weserv.nl/?url={{ site.url | replace: 'http://','' | replace: 'https://','' }}{{ file.path }}&w=300&h=300&output=jpg&q=50&t=square" alt="{{ filename }}" title="{{ filename }}" /> -->
-          <img src="{{ site.url }}/assets/images/seanryan19/thumbnails/{{ filename }}" alt="{{ filename }}" title="{{ filename }}" />
+          <img src="{{ site.baseurl }}/assets/images/seanryan19/{{ filename }}" alt="{{ filename }}" title="{{ filename }}" />
         </a>
       {% endif %}
     {% endif %}
