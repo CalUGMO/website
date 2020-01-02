@@ -1,0 +1,339 @@
+/*
+ * VARIABLES
+ */
+:root {
+  --ugmo-blue: #041E42;
+  --ugmo-gold: #FFC72C;
+  --light-gray-accent: #d5d5d5;
+  --light-gray: #f5f5f5;
+  --white: #fcfcfc;
+  --black: #202020;
+  --black-opaque: rgba(0, 0, 0, 0.7);
+}
+/*
+ * ENTIRE SITE
+ */
+body {
+  font-family: Roboto, sans-serif;
+  margin: 0px;
+  background-color: var(--light-gray);
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/*
+ * SITE HEADER
+ */
+.site-header {
+  background-color: var(--ugmo-blue);
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 20rem;
+  /* max-width: 20rem; */
+  min-width: 200px;
+  height: 100%;
+}
+
+.site-header .logo {
+  width: auto;
+  height: 25vh;
+  max-width: 20rem;
+  max-height: 20rem;
+  margin: auto;
+  display: block;
+  background: url("/one/assets/images/website_gold-navy.png") center no-repeat;
+  background-size: 25vh;
+}
+
+.site-header .logo:hover {
+  background-image: url("/one/assets/images/website_navy-gold.png");
+}
+
+.site-header .description {
+  color: var(--white);
+  text-align: center;
+}
+
+.site-header .wrapper ul {
+  padding: 0px;
+}
+
+.site-header .wrapper li {
+  text-align: center;
+  width: 100%;
+  list-style-type: none;
+  vertical-align: middle;
+  display: block;
+  border-top: #274975 1px solid;
+  font-size: 2vh;
+}
+
+.site-header .wrapper li:first-child {
+  border-top: none;
+}
+
+.site-header .wrapper li:hover {
+  background-color: var(--ugmo-gold);
+  color: var(--ugmo-blue);
+}
+
+.site-header a {
+  text-decoration: none;
+  color: var(--white);
+  padding: 30px 0;
+  display: block;
+}
+
+.site-header .wrapper li:hover a {
+  color: var(--ugmo-blue);
+}
+
+.site-header .wrapper .active {
+  color: var(--ugmo-gold);
+}
+
+/*
+ * WRAPPER
+ */
+.page-content > .wrapper {
+  padding-left: 20rem;
+}
+
+/*
+ * NEWS
+ */
+#news:before {
+  background-image: url('./images/silly_monkeys_1.jpg');
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: '';
+  display: block;
+  height: 15rem;
+  width: 100%;
+}
+#news > .container {
+  width: 40rem;
+  margin: auto;
+}
+#news .header {
+  background-color: var(--light-gray-accent);
+  padding: 1rem;
+}
+#news .header h2 {
+  color: var(--ugmo-blue);
+  width: 40rem;
+  margin: auto;
+  text-align: center;
+}
+#news .general .past {
+  opacity: 0.5;
+}
+
+
+/*
+ * THUGMO
+ */
+#thugmo:before {
+  background-image: url('./images/thugmo2.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: '';
+  display: block;
+  height: 15rem;
+  width: 100%;
+}
+#thugmo > .container {
+  width: 40rem;
+  margin: auto;
+}
+
+#thugmo .header{
+  background-color: var(--light-gray-accent);
+  padding: 1rem;
+}
+#thugmo .header h2 {
+  color: var(--ugmo-blue);
+  width: 40rem;
+  margin: auto;
+  text-align: center;
+}
+
+/*
+ * ABOUT
+ */
+#about:before {
+  background-image: url('./images/social_1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: '';
+  display: block;
+  height: 15rem;
+  width: 100%;
+}
+#about > .container {
+  width: 40rem;
+  margin: auto;
+}
+
+#about .header{
+  background-color: var(--light-gray-accent);
+  padding: 1rem;
+}
+#about .header h2 {
+  color: var(--ugmo-blue);
+  width: 40rem;
+  margin: auto;
+  text-align: center;
+}
+/*
+ * MEDIA
+ */
+#media:before {
+  background-image: url('./images/backdrop_1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: '';
+  display: block;
+  height: 15rem;
+  width: 100%;
+}
+#media > .container {
+  width: 90%;
+  margin: auto;
+  padding-top: 10px;
+}
+
+#media .header{
+  background-color: var(--light-gray-accent);
+  padding: 1rem;
+}
+#media .header h2 {
+  color: var(--ugmo-blue);
+  width: 40rem;
+  margin: auto;
+  text-align: center;
+}
+#media .grid-item, .grid-sizer {
+  width: 10%;
+  margin-bottom: 5px;
+  opacity: 0.7;
+}
+#media .grid-item:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+#media .grid-item-long {
+ width: 30%;
+}
+#media .grid-item img {
+  width: 100%;
+}
+#media .grid-item-tall {
+  width: 22%;
+}
+#media .background {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  height: 100%;
+  overflow: auto;
+  top: 0;
+  left: 20rem;
+  background-color: var(--black-opaque);
+}
+#media .background > .pop {
+  z-index: 12;
+  text-align: center;
+}
+/*
+ * ROSTER
+ */
+#roster:before {
+  background-image: url('./images/tuna_max_1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: '';
+  display: block;
+  height: 15rem;
+  width: 100%;
+}
+#roster > .container {
+  width: 90%;
+  margin: auto;
+}
+
+#roster .header{
+  background-color: var(--light-gray-accent);
+  padding: 1rem;
+}
+#roster .header h2 {
+  color: var(--ugmo-blue);
+  width: 40rem;
+  margin: auto;
+  text-align: center;
+}
+#roster .grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+#roster .grid-item {
+  cursor: pointer;
+  width: 18%;
+  height: auto;
+  background-color: var(--light-gray-accent);
+  margin: 1%;
+}
+@media only screen and (max-width: 1000px){
+  #roster .grid-item {
+    width: 23%;
+    margin: 1%;
+  }
+}
+#roster .grid-item .picture {
+  display: block;
+  width: 90%;
+  margin: 5% auto;
+}
+#roster .grid-item .metadata {
+  text-align: center;
+}
+#roster .background {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 20rem;
+  right: 0;
+  bottom: 0;
+  background-color: var(--black-opaque);
+}
+#roster .background > .pop {
+  width: 50%;
+  max-width: 600px;
+  z-index: 12;
+  text-align: center;
+  background-color: var(--light-gray-accent);
+  margin: auto;
+  margin-top: 5%;
+  padding: 3%;
+}
+#roster .background > .pop img {
+  width: 80%;
+}
+#roster .background > .pop .bio {
+  max-width: 80%;
+  text-align: justify;
+  margin: auto;
+}
+#roster .background > .pop .data {
+  max-width: 80%;
+  margin: 1em auto;
+}
