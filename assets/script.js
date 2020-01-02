@@ -29,7 +29,7 @@ $(document).ready(function(){
       }
     });
   });
-
+  
   //Media click handling
   $("#media .grid-item").on("click", function() {
     $src = $(this).children(":first").attr("src");
@@ -67,4 +67,7 @@ $(document).ready(function(){
     filename = "news";
   }
   $("#" + filename + "-bar a").addClass("active");
+
+  // Justifies Gallery
+  $("#media_img_gallery").justifiedGallery();
 });
