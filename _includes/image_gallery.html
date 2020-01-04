@@ -31,7 +31,7 @@
         {% assign filename = filenameparts | last %}
         <a href="{{ site.baseurl}}/{{ file.path }}" title="{{ filename }}">
           <!-- <img src="//images.weserv.nl/?url={{ site.url | replace: 'http://','' | replace: 'https://','' }}{{ file.path }}&w=300&h=300&output=jpg&q=50&t=square" alt="{{ filename }}" title="{{ filename }}" /> -->
-          <img src="{{ site.baseurl }}/assets/images/seanryan19/{{ filename }}" alt="{{ filename }}" title="{{ filename }}" />
+          <img src="{{ site.baseurl }}/{{ file.path }}" alt="{{ filename }}" title="{{ filename }}" />
         </a>
       {% endif %}
     {% endif %}
