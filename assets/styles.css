@@ -44,12 +44,12 @@ body {
   max-height: 20rem;
   margin: auto;
   display: block;
-  background: url("{{site.baseurl}}/assets/images/website_gold-navy.png") center no-repeat;
+  background: url("{{site.baseurl}}/assets/images/title_images/website_gold-navy.png") center no-repeat;
   background-size: 25vh;
 }
 
 .site-header .logo:hover {
-  background-image: url("{{site.baseurl}}/assets/images/website_navy-gold.png");
+  background-image: url("{{site.baseurl}}/assets/images/title_images/website_navy-gold.png");
 }
 
 .site-header .description {
@@ -106,7 +106,7 @@ body {
  * NEWS
  */
 #news:before {
-  background-image: url('./images/silly_monkeys_1.jpg');
+  background-image: url('./images/title_images/silly_monkeys_1.jpg');
   background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -138,7 +138,7 @@ body {
  * THUGMO
  */
 #thugmo:before {
-  background-image: url('./images/thugmo2.jpeg');
+  background-image: url('./images/title_images/thugmo2.jpeg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -167,7 +167,7 @@ body {
  * ABOUT
  */
 #about:before {
-  background-image: url('./images/social_1.jpg');
+  background-image: url('./images/title_images/social_1.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -195,7 +195,7 @@ body {
  * MEDIA
  */
 #media:before {
-  background-image: url('./images/backdrop_1.jpg');
+  background-image: url('./images/title_images/backdrop_1.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -256,7 +256,7 @@ body {
  * ROSTER
  */
 #roster:before {
-  background-image: url('./images/tuna_max_1.jpg');
+  background-image: url('./images/title_images/tuna_max_1.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
