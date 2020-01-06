@@ -8,7 +8,7 @@ title: Roster
   </section>
   <div class="container">
     <div class="grid">
-      {% for player in site.roster2019 %}
+      {% for player in site.roster2020 %}
       <div class="grid-item" data-name="{{ player.short }}">
         <img src="{{ player.img_url }}" class="picture" />
         <p class="metadata">{{ player.name }} | <em>#{{ player.number }}</em></p>
@@ -16,7 +16,7 @@ title: Roster
       {% endfor %}
 
     </div>
-    {% for player in site.roster2019 %}
+    {% for player in site.roster2020 %}
     <div class="background" id="{{ player.short }}">
       <div class="pop">
         {{ player.content }}

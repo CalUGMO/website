@@ -27,6 +27,9 @@ collections:
     output: true
   roster2019:
     output: false
+  roster2020:
+    output: false
+
 
 # Build settings
 markdown: kramdown

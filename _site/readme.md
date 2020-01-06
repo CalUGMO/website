@@ -4,6 +4,8 @@ build site: `bundle exec jekyll build`
 
 test locally: `bundle exec jekyll serve`
 
+SSH: `ssh ugmo@ugmo.org` ask [ryan](mailto:ryanjlee@berkeley.edu) or [josh](mailto:joshuayuan@berkeley.edu) for the password
+
 ## Todo
 
 1. update roster
