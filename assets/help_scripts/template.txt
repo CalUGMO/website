@@ -1,0 +1,16 @@
+---
+name: NAME
+number: NUMBER
+major: MAJOR
+hometown: HOMETOWN
+yis: YIS
+img_url: /assets/images/roster/rosterUGMOYEAR/SHORT.jpg
+short: SHORT 
+info1: INFO_1
+info2: INFO_2
+info3: INFO_3
+---
+<img src="{{ site.baseurl }}/assets/images/roster/rosterUGMOYEAR/SHORT.jpg" class="picture" />
+<h2 class="name">NAME | <em>NUMBER</em></span></h2>
+<p class="data">MAJOR from HOMETOWN, studying MAJOR</p>
+<p class="bio">INFO_1</p>
