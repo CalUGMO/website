@@ -5,21 +5,32 @@ import sys
 html_template = ''
 data = [] 
 output = {}
-output_path = 'examples/'
-input_path = sys.argv[1]
+output_path = 'output/'
+ugmo_year = sys.argv[1]
+input_path = 'data.csv'
 template_path = 'template.txt'
 # -------------------- GLOBAL VARIABLES END --------------------
 
 # -------------------- HELPER FUNCTIONS START --------------------
 def process_data(person_data):
-    person_data['HOMETOWN'] = person_data['HOMETOWN'].replace('|', ', ') 
+    person_data['UGMOYEAR'] = ugmo_year
     person_data['SHORT'] = person_data['NAME'].replace(' ', '_').lower()
+    if person_data['NICKNAME']:
+        name_split = person_data['NAME'].split()
+        person_data['DISPLAYNAME'] = name_split[0] + " (" + person_data['NICKNAME'] + ") " + name_split[1]
+    else: 
+        person_data['DISPLAYNAME'] = person_data['NAME']
 
+    if person_data['MINOR']:
+        person_data["DISPLAYMAJOR"] = "studying " + person_data['MAJOR'] + " and minoring in " + person_data['MINOR']
+    else:
+        person_data["DISPLAYMAJOR"] = "studying " + person_data['MAJOR']
+        
 def create_html_block(person_data, template):
     process_data(person_data)
     ret = template
     for attr in person_data:
-        keyword = attr
+        keyword = "$" + attr + "$" 
         ret = ret.replace(keyword, person_data[attr])
     return ret
 
@@ -65,3 +76,5 @@ for person in data:
 for key in output:
     write_to_file(output_path + key + '.html', output[key])
 # -------------------- EXECUTABLE CODE END --------------------
+
+print("HTML files have been outputted to the \output directory.  you should now run rm ../../../../collections/_rosterYEAR/* && cp output/* ../../../../collections/_rosterYEAR/")
