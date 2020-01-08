@@ -17,7 +17,7 @@ def process_data(person_data):
     person_data['SHORT'] = person_data['NAME'].replace(' ', '_').lower()
     if person_data['NICKNAME']:
         name_split = person_data['NAME'].split()
-        person_data['DISPLAYNAME'] = name_split[0] + " (" + person_data['NICKNAME'] + ") " + name_split[1]
+        person_data['DISPLAYNAME'] = name_split[0] + " (" + person_data['NICKNAME'] + ") " + " ".join(name_split[1:])
     else: 
         person_data['DISPLAYNAME'] = person_data['NAME']
 
