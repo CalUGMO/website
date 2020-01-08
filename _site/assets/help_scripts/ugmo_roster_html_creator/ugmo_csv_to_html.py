@@ -77,4 +77,4 @@ for key in output:
     write_to_file(output_path + key + '.html', output[key])
 # -------------------- EXECUTABLE CODE END --------------------
 
-print("HTML files have been outputted to the \output directory.  you should now run \nrm -rf ../../../collections/_roster" + ugmo_year + " && cp -a output/. ../../../collections/_roster" + ugmo_year + "/")
+print("HTML files have been outputted to the \output directory.\n**IMPORTANT** make sure you run rm -rf output/* before you run the next command.\n\nrm -rf ../../../collections/_roster" + ugmo_year + " && cp -a output/. ../../../collections/_roster" + ugmo_year + "/\n")
