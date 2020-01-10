@@ -6,7 +6,7 @@ test locally: `bundle exec jekyll serve`
 
 SSH: `ssh ugmo@ugmo.org` ask [ryan](mailto:ryanjlee@berkeley.edu) or [josh](mailto:joshuayuan@berkeley.edu) for the password
 
-Copy _site to live server: `mv _site/* ../ugmo/`
+Copy _site to live server: `cp -a _site/. ../ugmo/`
 
 ## Todo
 
