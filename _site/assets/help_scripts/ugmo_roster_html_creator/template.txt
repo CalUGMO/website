@@ -1,4 +1,4 @@
 <img src="/assets/images/roster/roster$UGMOYEAR$/$SHORT$.jpg" class="picture" />
 <h2 class="name">$DISPLAYNAME$ | <em>#$NUMBER$</em></span></h2>
-<p class="data">$YIS$ from $HOMETOWN$, $DISPLAYMAJOR$</p>
+<p class="data">$YIS$ $DISPLAYMAJOR$ from $HOMETOWN$</p>
 <p class="bio">$INFO_1$</p>

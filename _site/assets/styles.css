@@ -136,7 +136,7 @@ body {
  * THUGMO
  */
 #thugmo:before {
-  background-image: url('./images/title_images/thugmo2.jpeg');
+  background-image: url('./images/title_images/thugmo_backdrop20.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -207,10 +207,20 @@ body {
   margin: auto;
   padding-top: 10px;
 }
-
+#media .videos{
+  width: 90%;
+  margin: auto;
+}
+#media .videos iframe{
+  display: inline-block;
+}
 #media .header{
   background-color: var(--light-gray-accent);
   padding: 1rem;
+  text-align: center;
+}
+#media h3{
+  text-align: center;
 }
 #media .header h2 {
   color: var(--ugmo-blue);
