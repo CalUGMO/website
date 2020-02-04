@@ -93,6 +93,14 @@ body {
   color: var(--ugmo-gold);
 }
 
+.footer {
+	position: absolute;
+  left: 0;
+  bottom: -40px;
+  width: 20rem;
+  text-align: center;  
+}
+
 /*
  * WRAPPER
  */
@@ -347,3 +355,4 @@ body {
   max-width: 80%;
   margin: 1em auto;
 }
+
