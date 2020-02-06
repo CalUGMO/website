@@ -353,6 +353,7 @@ body {
   max-width: 80%;
   text-align: justify;
   margin: auto;
+  font-size: calc(10px + .3vw);
 }
 #roster .background > .pop .data {
   max-width: 80%;
