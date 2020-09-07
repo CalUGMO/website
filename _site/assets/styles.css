@@ -47,7 +47,8 @@ body {
 }
 
 .site-header .logo:hover {
-  background-image: url("/assets/images/title_images/website_navy-gold.png");
+  /* Can uncomment when we get a inverted color logo */
+  /*background-image: url("/assets/images/title_images/website_navy-gold.png");*/
 }
 
 .site-header .description {
